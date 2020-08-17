@@ -43,8 +43,8 @@ namespace SendEmailProject.Controllers
 
                     using (SmtpClient smtp = new SmtpClient())
                     {
-                        smtp.Host = "kingmailer.org";                      
-                        NetworkCredential NetworkCred = new NetworkCredential("rajendiransangeetha-gmail-com/free-trial", "FyKrbi3xot565jxPDGlFRttN");
+                        smtp.Host = "smtp.sendgrid.net";                      
+                        NetworkCredential NetworkCred = new NetworkCredential("apikey", "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");
                         smtp.Credentials = NetworkCred;
                         smtp.Port = 25;
                         smtp.Send(mm);
